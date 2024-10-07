@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L]
+
+# Allow access to CSS, JS, and image files
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)\.(css|js|png|jpg|jpeg|gif)$ - [L]
+

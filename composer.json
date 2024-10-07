@@ -1,0 +1,17 @@
+{
+  "autoload": {
+    "psr-4": {
+      "App\\": "App/",
+      "App\\Controllers\\": "App/Controllers/",
+      "App\\Models\\": "App/Models/",
+      "App\\Views\\": "App/Views/",
+      "App\\Core\\": "App/Core/",
+      "App\\Enums\\": "App/Enums/"
+    }
+  },
+  "require": {
+    "ext-mysqli": "*",
+    "ext-json": "*",
+    "ext-ctype": "*"
+  }
+}
